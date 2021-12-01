@@ -1,0 +1,66 @@
+@use 'variables';
+
+// COLOR THEMES
+
+.navbar--light {
+    background-color: variables.$color-navbar--light;
+
+    .navbar__link--dark {
+        color: black;
+    }
+}
+
+
+.navbar--dark {
+    background-color: variables.$color-navbar--dark;
+
+    navbar__link--light {
+        color: white;
+
+    }
+}
+
+
+//STYLING
+
+.navbar {
+    height: 56px;
+
+    @media screen and (min-width: 768px) {
+        height: 64px;
+    }
+    
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+
+    &__link-box {
+        padding: 5px 20px;
+    }
+
+    &__link-box--border {
+        border-left: 1px solid variables.$color-objects;
+    }
+
+    &__link-box--hide {
+        @media screen and (max-width: 550px) {
+            display: none;
+        }
+    }
+
+    .highlight {
+        background-size: 0%;
+    }
+
+    &__link:hover {
+        // color: variables.$color-primary;
+
+        .highlight {
+            background-size: 100% 40%;
+        }
+
+    }
+
+}
+

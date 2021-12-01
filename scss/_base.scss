@@ -1,0 +1,23 @@
+@use 'variables';
+
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+  font-family: "Oxygen", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.highlight {
+  background: linear-gradient(120deg, variables.$color-primary--highlight 0%, variables.$color-primary--highlight 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  background-position: 0 100%;
+}

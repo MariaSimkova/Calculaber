@@ -1,0 +1,34 @@
+@use 'variables';
+
+.hero {
+
+    &__button-backplate {
+        width: 90px;
+        height: 50px;
+        background-color: variables.$color-primary;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px variables.$color-objects;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            box-shadow: 5px 5px 8px variables.$color-objects;
+
+            background-color: variables.$color-primary--hover;
+        }
+
+        &:active {
+            box-shadow: 3px 3px 5px variables.$color-objects;
+            // doesn't work
+        } 
+
+    &__button-text {
+        padding: 10px 20px;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+}
