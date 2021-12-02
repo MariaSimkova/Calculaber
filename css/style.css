@@ -8,6 +8,8 @@ html {
 
 body {
   font-family: "Oxygen", sans-serif;
+  font-size: 16px;
+  margin: 0;
 }
 
 a {
@@ -48,33 +50,59 @@ ul, li {
   font-size: 20px;
 }
 
+.welcome__button-backplate {
+  display: grid;
+  place-content: center;
+  width: 90px;
+  height: 50px;
+  background-color: #FEBE0C;
+  border-radius: 10px;
+}
+
 .navbar--light {
   background-color: #FFFFFF;
+  justify-content: end;
 }
 .navbar--light .navbar__link--dark {
   color: black;
+  padding: 0 10px;
 }
 
 .navbar--dark {
   background-color: #2E2A3D;
+  justify-content: space-between;
 }
-.navbar--dark navbar__link--light {
+.navbar--dark .navbar__link--light {
   color: white;
 }
 
 .navbar {
-  height: 56px;
+  height: 48px;
   display: flex;
-  justify-content: end;
   align-items: center;
 }
-@media screen and (min-width: 768px) {
-  .navbar {
-    height: 64px;
-  }
+.navbar__menu {
+  display: flex;
+}
+.navbar__logo {
+  display: flex;
+  align-items: center;
+}
+.navbar__logo .navbar__link {
+  font-size: 18px;
+}
+.navbar .logo {
+  width: 30px;
+  height: auto;
+  margin: 0 10px 0 15px;
 }
 .navbar__link-box {
-  padding: 5px 20px;
+  padding: 5px 8px;
+}
+@media screen and (min-width: 768px) {
+  .navbar__link-box {
+    padding: 5px 20px;
+  }
 }
 .navbar__link-box--border {
   border-left: 1px solid #CED6DF;
@@ -84,11 +112,47 @@ ul, li {
     display: none;
   }
 }
+.navbar__link-box--text {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navbar__link-box--text {
+    display: block;
+  }
+}
+.navbar__link-box--icon {
+  padding: 9px 15px 0 8px;
+}
+@media screen and (min-width: 768px) {
+  .navbar__link-box--icon {
+    display: none;
+  }
+}
+.navbar__link-box--admin {
+  display: none;
+}
+.navbar__link {
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .navbar__link {
+    font-size: 16px;
+  }
+}
 .navbar .highlight {
   background-size: 0%;
 }
-.navbar__link:hover .highlight {
+.navbar__link--highlight:hover .highlight {
   background-size: 100% 40%;
+}
+.navbar__link--underline {
+  padding: 0 5px 11px;
+}
+.navbar__link--underline:hover {
+  border-bottom: 3.5px solid #FEBE0C;
+}
+.navbar__link--icon:hover {
+  color: #FEBE0C;
 }
 
 .hero {
@@ -110,4 +174,16 @@ ul, li {
 
 .value-prop {
   padding: 70px 20px;
+}
+
+.welcome {
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+.welcome__title {
+  padding-top: 30px;
+}
+.welcome__subtitle, .welcome__tip {
+  color: #A2A6AA;
 }/*# sourceMappingURL=style.css.map */

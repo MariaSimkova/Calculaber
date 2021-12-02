@@ -32,3 +32,13 @@
     }
 
 }
+
+.welcome {
+    &__button-backplate {
+        @include mixins.center;
+        width: 90px;
+        height: 50px;
+        background-color: variables.$color-primary;
+        border-radius: 10px;
+    }
+}

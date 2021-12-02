@@ -1,5 +1,7 @@
 @use 'variables';
 
+//WELCOME PAGE
+
 .hero {
     padding: 20px;
     display: flex;
@@ -23,4 +25,22 @@
 
 .value-prop {
     padding: 70px 20px;
+}
+
+
+// REGISTER
+
+.welcome {
+    display: grid;
+    place-content: center;
+    text-align: center;
+
+    &__title {
+        padding-top: 30px;
+    }
+
+    &__subtitle,
+    &__tip {
+        color: variables.$color-text-secondary;
+    }
 }
