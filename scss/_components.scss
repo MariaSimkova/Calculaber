@@ -1,17 +1,16 @@
 @use 'variables';
+@use 'mixins';
 
 .hero {
 
     &__button-backplate {
+        @include center;
         width: 90px;
         height: 50px;
         background-color: variables.$color-primary;
         border-radius: 10px;
         box-shadow: 5px 5px 15px variables.$color-objects;
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    
 
         &:hover {
             box-shadow: 5px 5px 8px variables.$color-objects;
