@@ -4,7 +4,7 @@
 .hero {
 
     &__button-backplate {
-        @include center;
+        @include mixins.center;
         width: 90px;
         height: 50px;
         background-color: variables.$color-primary;
@@ -23,9 +23,10 @@
             // doesn't work
         } 
 
-    &__button-text {
+    }
+
+    &__button-text{
         padding: 10px 20px;
-        color: black;
         font-weight: bold;
         font-size: 20px;
     }

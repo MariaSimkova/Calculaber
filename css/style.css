@@ -12,6 +12,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 ul, li {
@@ -19,29 +20,30 @@ ul, li {
 }
 
 .highlight {
-  background: linear-gradient(120deg, #febe0c 0%, #febe0c 100%);
+  background: linear-gradient(120deg, #FAC835 0%, #FAC835 100%);
   background-repeat: no-repeat;
   background-size: 100% 40%;
   background-position: 0 100%;
 }
 
 .hero__button-backplate {
+  display: grid;
+  place-content: center;
   width: 90px;
   height: 50px;
-  background-color: #febe0c;
+  background-color: #FEBE0C;
   border-radius: 10px;
   box-shadow: 5px 5px 15px #CED6DF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .hero__button-backplate:hover {
   box-shadow: 5px 5px 8px #CED6DF;
   background-color: #ffbb00;
 }
+.hero__button-backplate:active {
+  box-shadow: 3px 3px 5px #CED6DF;
+}
 .hero__button-text {
   padding: 10px 20px;
-  color: black;
   font-weight: bold;
   font-size: 20px;
 }
