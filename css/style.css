@@ -32,21 +32,28 @@ ul, li {
   margin: 0;
 }
 
-.hero__button-backplate {
+.button {
   display: grid;
   place-content: center;
-  width: 90px;
-  height: 50px;
-  background-color: #FEBE0C;
   border-radius: 10px;
+}
+.button--primary {
+  background-color: #FEBE0C;
+}
+.button--shadow {
   box-shadow: 5px 5px 15px #CED6DF;
 }
-.hero__button-backplate:hover {
+.button:hover {
   box-shadow: 5px 5px 8px #CED6DF;
   background-color: #ffbb00;
 }
-.hero__button-backplate:active {
+.button:active {
   box-shadow: 3px 3px 5px #CED6DF;
+}
+
+.hero__button-backplate {
+  width: 90px;
+  height: 50px;
 }
 .hero__button-text {
   padding: 10px 20px;
@@ -55,12 +62,8 @@ ul, li {
 }
 
 .welcome__button-backplate {
-  display: grid;
-  place-content: center;
   width: 90px;
   height: 50px;
-  background-color: #FEBE0C;
-  border-radius: 10px;
 }
 
 .navbar--light {
@@ -189,26 +192,31 @@ ul, li {
 }
 .welcome__title {
   padding: 60px 0 40px 0;
+  font-size: 40px;
 }
 .welcome__subtitle {
   padding-bottom: 15px;
+  font-size: 20px;
 }
 .welcome__field {
   border: 1px solid #CED6DF;
   padding: 5px;
-  width: 150px;
+  width: 200px;
   height: 50px;
   display: grid;
   place-content: center;
 }
 .welcome__number {
-  font-size: 20px;
+  font-size: 24px;
 }
 .welcome__tip {
   color: #A2A6AA;
   padding: 5px 0 50px;
-  font-size: 12px;
+  font-size: 14px;
 }
 .welcome__button-backplate {
-  width: 150px;
+  width: 200px;
+}
+.welcome__button-text {
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
