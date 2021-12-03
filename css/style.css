@@ -38,6 +38,10 @@ button {
   border: 0;
 }
 
+main {
+  padding: 0 50px;
+}
+
 .button {
   display: grid;
   place-content: center;
@@ -55,6 +59,10 @@ button {
 }
 .button:active {
   box-shadow: 3px 3px 5px #CED6DF;
+}
+
+.icon-new {
+  color: #FEBE0C;
 }
 
 .navbar--light {
@@ -154,6 +162,12 @@ button {
   color: #FEBE0C;
 }
 
+.path {
+  padding: 20px 0;
+  color: #A2A6AA;
+  font-size: 14px;
+}
+
 .hero {
   width: 100%;
   padding: 20px;
@@ -221,4 +235,14 @@ button {
 .welcome__input {
   font-size: 18px;
   margin-bottom: 60px;
+}
+
+.content {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content__page-title {
+  font-weight: normal;
 }/*# sourceMappingURL=style.css.map */

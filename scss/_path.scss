@@ -1,0 +1,7 @@
+@use 'variables';
+
+.path {
+    padding: 20px 0;
+    color: variables.$color-text-secondary;
+    font-size: 14px;
+  }
