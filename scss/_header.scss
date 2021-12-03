@@ -5,7 +5,7 @@
 
 .navbar--light {
     background-color: variables.$color-navbar--light;
-    justify-content: end;
+    justify-content: flex-end;
 
     .navbar__link--dark {
         color: black;

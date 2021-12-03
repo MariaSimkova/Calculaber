@@ -59,7 +59,7 @@ button {
 
 .navbar--light {
   background-color: #FFFFFF;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .navbar--light .navbar__link--dark {
   color: black;
