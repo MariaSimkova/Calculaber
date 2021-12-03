@@ -26,25 +26,3 @@
         // doesn't work
     } 
 }
-
-.hero {
-
-    &__button-backplate {
-        width: 90px;
-        height: 50px;
-    }
-
-    &__button-text{
-        padding: 10px 20px;
-        font-weight: bold;
-        font-size: 20px;
-    }
-
-}
-
-.welcome {
-    &__button-backplate {
-        width: 90px;
-        height: 50px;
-    }
-}
