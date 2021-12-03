@@ -30,6 +30,7 @@
 
 .navbar {
     height: 48px;
+    width: 100vw;
 
     display: flex;
     align-items: center;
@@ -125,7 +126,7 @@
     }
     
     &__link--underline:hover {
-        border-bottom: 3.5px solid variables.$color-primary;
+        border-bottom: 3.3px solid variables.$color-primary;
     }
     
     &__link--icon:hover {

@@ -28,6 +28,10 @@ ul, li {
   background-position: 0 100%;
 }
 
+* {
+  margin: 0;
+}
+
 .hero__button-backplate {
   display: grid;
   place-content: center;
@@ -78,6 +82,7 @@ ul, li {
 
 .navbar {
   height: 48px;
+  width: 100vw;
   display: flex;
   align-items: center;
 }
@@ -149,7 +154,7 @@ ul, li {
   padding: 0 5px 11px;
 }
 .navbar__link--underline:hover {
-  border-bottom: 3.5px solid #FEBE0C;
+  border-bottom: 3.3px solid #FEBE0C;
 }
 .navbar__link--icon:hover {
   color: #FEBE0C;
@@ -177,13 +182,33 @@ ul, li {
 }
 
 .welcome {
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 .welcome__title {
-  padding-top: 30px;
+  padding: 60px 0 40px 0;
 }
-.welcome__subtitle, .welcome__tip {
+.welcome__subtitle {
+  padding-bottom: 15px;
+}
+.welcome__field {
+  border: 1px solid #CED6DF;
+  padding: 5px;
+  width: 150px;
+  height: 50px;
+  display: grid;
+  place-content: center;
+}
+.welcome__number {
+  font-size: 20px;
+}
+.welcome__tip {
   color: #A2A6AA;
+  padding: 5px 0 50px;
+  font-size: 12px;
+}
+.welcome__button-backplate {
+  width: 150px;
 }/*# sourceMappingURL=style.css.map */
