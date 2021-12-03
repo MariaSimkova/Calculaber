@@ -167,8 +167,18 @@ main {
 
 .path {
   padding: 20px 0;
+  display: flex;
+}
+.path__link {
   color: #A2A6AA;
   font-size: 14px;
+  padding: 0 5px;
+}
+.path__link--active {
+  font-weight: bold;
+}
+.path__link:hover {
+  text-decoration: underline;
 }
 
 .header {

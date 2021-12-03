@@ -3,13 +3,15 @@ layout: layouts/layout.njk
 ---
 
 <div class="path">
-    <a href="/projekty/" class="path__link path__link--active">Projekty</a>
+    <a href="/projekty/" class="path__link">Projekty</a>
+    <p class="path__link"> / </p>
+    <a href="/objekty/" class="path__link path__link--active">Objekty</a>
 </div>
 
 
 <div class="header">
 
-    <h1 class="header__page-title">Projekty</h1>
+    <h1 class="header__page-title">Objekty</h1>
 
     <svg xmlns="http://www.w3.org/2000/svg" class="icon-new" width="40" height="40" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
@@ -19,55 +21,53 @@ layout: layouts/layout.njk
 
 <div class="gallery">
     
-    <a href="/objekty/" class="gallery__card">
+    <a href="/objekty/objekt-1/" class="gallery__card">
 
         <div class="gallery__image">
             <img src="#" class="gallery__user-image" alt="image">
         </div>
 
         <div class="gallery__title">
-            <p class="gallery__title--bottom">Project name</p>
+            <p class="gallery__title--bottom">Object name</p>
         </div>
     </a>
 
-    <a href="/objekty/" class="gallery__card">
+    <div class="gallery__card">
 
         <div class="gallery__image">
             <img src="#" class="gallery__user-image" alt="image">
         </div>
 
         <div class="gallery__title">
-            <p class="gallery__title--bottom">Project name</p>
+            <p class="gallery__title--bottom">Object name</p>
         </div>
+    </div>
 
-    </a>
-
-    <a href="/objekty/" class="gallery__card">
+    <div class="gallery__card">
 
         <div class="gallery__image">
             <img src="#" class="gallery__user-image" alt="image">
         </div>
 
         <div class="gallery__title">
-            <p class="gallery__title--bottom">Project name</p>
+            <p class="gallery__title--bottom">Object name</p>
         </div>
-    </a>
+    </div>
 
-    <a href="/objekty/" class="gallery__card">
+    <div class="gallery__card">
 
         <div class="gallery__image">
             <img src="#" class="gallery__user-image" alt="image">
         </div>
 
         <div class="gallery__title">
-            <p class="gallery__title--bottom">Project name</p>
+            <p class="gallery__title--bottom">Object name</p>
         </div>
-    </a>
+    </div>
 
 
-    
     <div class="gallery__card gallery__card--new">
-        <p class="gallery__title--center">+ Nový projekt</p>
+        <p class="gallery__title--center">+ Nový objekt</p>
     </div>
 
 </div>
