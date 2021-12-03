@@ -169,7 +169,7 @@ main {
   padding: 20px 0;
   display: flex;
 }
-.path__link {
+.path__link, .path__slash {
   color: #A2A6AA;
   font-size: 14px;
   padding: 0 5px;
@@ -293,4 +293,11 @@ main {
   width: 100%;
   height: 30px;
   padding: 10px;
+}
+.gallery__title--flex {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery__title--price {
+  padding: 3px;
 }/*# sourceMappingURL=style.css.map */
