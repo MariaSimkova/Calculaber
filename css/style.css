@@ -251,6 +251,7 @@ main {
 }
 
 .gallery {
+  padding-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: auto;
