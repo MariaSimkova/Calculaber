@@ -1,0 +1,14 @@
+@use 'variables';
+@use 'mixins';
+
+.header {
+    padding: 20px 0 50px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__page-title {
+        font-weight: normal;
+    }
+}

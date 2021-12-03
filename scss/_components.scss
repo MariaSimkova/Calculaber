@@ -29,4 +29,8 @@
 
 .icon-new {
     color: variables.$color-primary;
+
+    &:hover {
+        color: variables.$color-primary--hover;
+    }
 }
