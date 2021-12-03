@@ -4,17 +4,17 @@ layout: layouts/main-layout.njk
 
 <header class="header">
 
-    <div class="navbar  navbar--dark">
+    <div class="navbar  navbar--light">
 
         <div class="navbar__link-box">
 
-            <a href="/login/" class="navbar__link navbar__link--light"><span class="highlight">Přihlášení</span></a>
+            <a href="/login/" class="navbar__link navbar__link--dark navbar__link--highlight"><span class="highlight">Přihlášení</span></a>
 
         </div>
 
         <div class="navbar__link-box navbar__link-box--border navbar__link-box--hide">
 
-            <a href="/registrace/" class="navbar__link navbar__link--light"><span class="highlight">Registrace</span></a>
+            <a href="/registrace/" class="navbar__link navbar__link--dark navbar__link--highlight"><span class="highlight">Registrace</span></a>
 
         </div>
         
@@ -24,24 +24,21 @@ layout: layouts/main-layout.njk
 
 <div class="welcome">
 
-    <h1 class="welcome__title">Registrace</h1>
+    <h1 class="welcome__title">Přihlašení</h1>
 
     <div class="welcome__info">
 
         <p class="welcome__subtitle">Klientské čislo</p>
 
-        <div class="welcome__field">
-            <p class="welcome__number">138596732</p>
-        </div>
+        <!-- <label for="client id" class="welcome__subtitle">Klientské čislo</label> -->
 
-        <p class="welcome__tip">Uložte si pro další použítí</p>
+        <input type="text" class="welcome__field welcome__input" name="client id" id="client id" required>
 
     </div>
 
-    <div class="welcome__button-backplate">
 
-        <a href="#" class="welcome__button-text">Pokračovat</a>
-        
-    </div>
+    <form action="#">
+        <button type="submit" class="welcome__button button button--primary button--shadow">Pokračovat</button>
+   </form>
     
 </div>
