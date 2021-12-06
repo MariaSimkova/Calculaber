@@ -1,0 +1,53 @@
+@use 'variables';
+@use 'mixins';
+
+table {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+th {
+    text-align: left;
+}
+
+th {
+    border-bottom: 1px solid variables.$color-objects;
+}
+
+th,
+td {
+    padding: 20px;
+}
+
+.table-object {
+
+    &__item {
+        font-weight: bold;
+    }
+
+    &__icons {
+        display: flex;
+        align-items: center;
+    }
+
+    &__edit {
+        margin-right: 20px;
+        padding: 7px;
+        @include mixins.center;
+
+        &:hover {
+            background-color: variables.$color-icon--neutral;
+            border-radius: 50%;
+        }
+    }
+
+    &__remove {
+        padding: 7px;
+        @include mixins.center;
+
+        &:hover {
+            background-color: variables.$color-icon--danger;
+            border-radius: 50%;
+        }
+    }
+}

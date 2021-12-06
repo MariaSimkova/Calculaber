@@ -11,4 +11,14 @@
     &__page-title {
         font-weight: normal;
     }
+
+    &__tools {
+        display: flex;
+        align-items: center
+    };
+
+    &__price {
+        padding: 0 30px 0 20px;
+        font-size: 20px;
+    }
 }

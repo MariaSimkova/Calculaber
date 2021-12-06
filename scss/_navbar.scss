@@ -87,6 +87,7 @@
     &__link-box--icon {
 
         padding: 9px 15px 0 8px;
+        margin-right: 8px;
     
         @include mixins.tablet {
             display: none;
