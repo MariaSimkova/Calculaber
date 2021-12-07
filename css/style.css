@@ -61,11 +61,45 @@ main {
   box-shadow: 3px 3px 5px #CED6DF;
 }
 
+.icon {
+  display: flex;
+  align-items: center;
+}
+.icon-edit {
+  margin-right: 20px;
+  padding: 7px;
+  display: grid;
+  place-content: center;
+}
+.icon-edit:hover {
+  background-color: #EFF1F3;
+  border-radius: 50%;
+}
+.icon-remove {
+  padding: 7px;
+  display: grid;
+  place-content: center;
+}
+.icon-remove:hover {
+  background-color: #FFD8D8;
+  border-radius: 50%;
+}
 .icon-new {
   color: #FEBE0C;
 }
 .icon-new:hover {
   color: #f8b600;
+}
+.icon-duplicate {
+  margin-right: 10px;
+  display: grid;
+  place-content: center;
+  padding: 10px 10px;
+  background-color: #EFF1F3;
+  border-radius: 50%;
+}
+.icon-duplicate:hover {
+  background-color: #FEBE0C;
 }
 
 .navbar--light {
@@ -186,18 +220,36 @@ main {
   padding: 20px 0 50px 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .header__page-title {
   font-weight: normal;
 }
-.header__tools {
+.header__right {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.header__object, .header__project-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__project-icons {
+  margin-left: 20px;
+  display: flex;
+}
+.header__project-icons .icon-edit {
+  margin-right: 3px;
 }
 .header__price {
-  padding: 0 30px 0 20px;
-  font-size: 20px;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 5px;
+  font-size: 14px;
+  background-color: #b9b6c2;
+  border-radius: 10px;
+  color: white;
 }
 
 .hero {
@@ -306,9 +358,14 @@ main {
 .gallery__title--flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .gallery__title--price {
   padding: 3px;
+}
+
+.toolbar {
+  display: flex;
 }
 
 table {
@@ -329,29 +386,32 @@ td {
   padding: 20px;
 }
 
-.table-object__item {
-  font-weight: bold;
-}
-.table-object__icons {
+.table__icons {
   display: flex;
   align-items: center;
 }
-.table-object__edit {
+.table__icons--edit {
   margin-right: 20px;
   padding: 7px;
   display: grid;
   place-content: center;
 }
-.table-object__edit:hover {
+.table__icons--edit:hover {
   background-color: #EFF1F3;
   border-radius: 50%;
 }
-.table-object__remove {
+.table__icons--remove {
   padding: 7px;
   display: grid;
   place-content: center;
 }
-.table-object__remove:hover {
+.table__icons--remove:hover {
   background-color: #FFD8D8;
   border-radius: 50%;
+}
+.table-object__item, .table-material__item {
+  font-weight: bold;
+}
+.table__new {
+  color: #A2A6AA;
 }/*# sourceMappingURL=style.css.map */

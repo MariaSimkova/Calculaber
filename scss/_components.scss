@@ -27,10 +27,50 @@
     } 
 }
 
-.icon-new {
-    color: variables.$color-primary;
+.icon {
+    display: flex;
+    align-items: center;
 
-    &:hover {
-        color: variables.$color-primary--hover;
+    &-edit {
+        margin-right: 20px;
+        padding: 7px;
+        @include mixins.center;
+
+        &:hover {
+            background-color: variables.$color-icon--neutral;
+            border-radius: 50%;
+        }
     }
+
+    &-remove {
+        padding: 7px;
+        @include mixins.center;
+
+        &:hover {
+            background-color: variables.$color-icon--danger;
+            border-radius: 50%;
+        }
+    }
+
+    &-new {
+        color: variables.$color-primary;
+    
+        &:hover {
+            color: variables.$color-primary--hover;
+        }
+    }
+
+    &-duplicate {
+        margin-right: 10px;
+        @include mixins.center;
+        padding: 10px 10px;
+        background-color: variables.$color-icon--neutral;
+        border-radius: 50%;
+    
+        &:hover {
+            background-color: variables.$color-primary;
+        }
+    }
+
 }
+
