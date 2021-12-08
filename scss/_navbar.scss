@@ -69,8 +69,12 @@
         }
     }
 
-    &__link-box--border {
+    &__link-box--border-left {
         border-left: 1px solid variables.$color-objects;
+    }
+
+    &__link-box--border-right {
+        border-right: 1px solid variables.$color-objects;
     }
 
     &__link-box--hide {

@@ -80,11 +80,7 @@ main {
   display: grid;
   place-content: center;
 }
-.icon-remove:hover {
-  background-color: #FFD8D8;
-  border-radius: 50%;
-}
-.icon-remove:active {
+.icon-remove:hover, .icon-remove:active {
   background-color: #FFD8D8;
   border-radius: 50%;
 }
@@ -152,8 +148,11 @@ main {
     padding: 5px 20px;
   }
 }
-.navbar__link-box--border {
+.navbar__link-box--border-left {
   border-left: 1px solid #CED6DF;
+}
+.navbar__link-box--border-right {
+  border-right: 1px solid #CED6DF;
 }
 @media screen and (max-width: 550px) {
   .navbar__link-box--hide {

@@ -23,7 +23,6 @@
 
     &:active {
         box-shadow: 3px 3px 5px variables.$color-objects;
-        // doesn't work
     } 
 }
 
@@ -47,15 +46,12 @@
         padding: 7px;
         @include mixins.center;
 
-        &:hover{
-            background-color: variables.$color-icon--danger;
-            border-radius: 50%;
-        }
-
+        &:hover,
         &:active {
             background-color: variables.$color-icon--danger;
             border-radius: 50%;
         }
+
     }
 
     &-new {
