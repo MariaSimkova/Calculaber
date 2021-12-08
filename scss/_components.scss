@@ -47,7 +47,11 @@
         padding: 7px;
         @include mixins.center;
 
-        &:hover,
+        &:hover{
+            background-color: variables.$color-icon--danger;
+            border-radius: 50%;
+        }
+
         &:active {
             background-color: variables.$color-icon--danger;
             border-radius: 50%;

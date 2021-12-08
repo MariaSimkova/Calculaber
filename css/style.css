@@ -80,7 +80,11 @@ main {
   display: grid;
   place-content: center;
 }
-.icon-remove:hover, .icon-remove:active {
+.icon-remove:hover {
+  background-color: #FFD8D8;
+  border-radius: 50%;
+}
+.icon-remove:active {
   background-color: #FFD8D8;
   border-radius: 50%;
 }
