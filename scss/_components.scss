@@ -9,6 +9,10 @@
 
     &--primary {
         background-color: variables.$color-primary;
+        transition: 
+            background-color 0.2s, 
+            box-shadow 0.2s, 
+		    transform 0.2s;
     }
 
     &--shadow {
@@ -23,6 +27,7 @@
 
     &:active {
         box-shadow: 3px 3px 5px variables.$color-objects;
+        transform: translate(1px, 1px);
     } 
 }
 
