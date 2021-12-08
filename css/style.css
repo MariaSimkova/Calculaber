@@ -121,7 +121,7 @@ main {
 
 .navbar {
   height: 48px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -218,33 +218,51 @@ main {
 
 .header {
   padding: 20px 0 50px 0;
+  text-align: left;
+}
+.header--flex {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
-.header__page-title {
+.header__top {
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .header__top {
+    display: flex;
+  }
+}
+.header__title {
   font-weight: normal;
 }
-.header__right {
+.header__tools {
   display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-}
-.header__object, .header__project-top {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .header__project-icons {
-  margin-left: 20px;
   display: flex;
 }
-.header__project-icons .icon-edit {
-  margin-right: 3px;
+.header__project-icons .icon-edit--header {
+  margin: 0 3px 0 0;
+}
+@media screen and (min-width: 768px) {
+  .header__project-icons .icon-edit--header {
+    margin-left: 10px;
+  }
+}
+.header__object-icons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 .header__price {
   display: inline-block;
   margin-top: 20px;
+  margin-bottom: 20px;
   padding: 5px;
   font-size: 14px;
   background-color: #b9b6c2;
@@ -329,9 +347,8 @@ main {
   gap: 15px;
 }
 .gallery__card {
-  padding: 30px 0;
   width: 100%;
-  height: 150px;
+  height: 200px;
   border: 1px solid #CED6DF;
   border-radius: 5px;
   box-shadow: 0.5px 0.5px 4px #ebf0f6c5;
@@ -344,16 +361,19 @@ main {
   place-content: center;
 }
 .gallery__image {
-  height: 80%;
+  height: calc(100% - 75px);
+}
+.gallery__info {
+  display: flex;
+  flex-direction: column;
 }
 .gallery__title--center {
   color: #A2A6AA;
 }
 .gallery__title {
   border-top: 1px solid #CED6DF;
-  width: 100%;
   height: 30px;
-  padding: 10px;
+  padding: 15px 10px 10px 10px;
 }
 .gallery__title--flex {
   display: flex;
@@ -362,6 +382,14 @@ main {
 }
 .gallery__title--price {
   padding: 3px;
+}
+.gallery__tags {
+  display: flex;
+  padding: 10px;
+  font-size: 12px;
+}
+.gallery .tags-box {
+  margin: 2px;
 }
 
 .toolbar {

@@ -1,39 +1,68 @@
 @use 'variables';
 @use 'mixins';
 
+
+
 .header {
     padding: 20px 0 50px 0;
+    text-align: left;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    &__page-title {
-        font-weight: normal;
-        
+    &--flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    &__right {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    };
+    &__top {
+        margin: 0;
+        padding: 0;
 
-
-    &__object,
-    &__project-top {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include mixins.tablet {
+            display: flex;
+        }
     }
+  
+
+    &__title {
+        font-weight: normal;  
+    }
+
+
+    // &__right {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    // };
+
+
+
+    &__tools {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
 
     &__project-icons {
-        margin-left: 20px;
         display: flex;
 
-        .icon-edit {
-            margin-right: 3px;
+        .icon-edit--header {
+            margin: 0 3px 0 0;
+
+            @include mixins.tablet {
+                margin-left: 10px;
+            }
         }
+
+    }
+
+
+    &__object-icons {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
     }
 
 
@@ -41,12 +70,12 @@
     &__price {
         display: inline-block;
         margin-top: 20px;
+        margin-bottom: 20px;
         padding: 5px;
         font-size: 14px;
-        background-color: #b9b6c2;
+        background-color: variables.$color-secondary;
         border-radius: 10px;
-        // font-weight: bold;
         color: white;
     }
-}
 
+}
