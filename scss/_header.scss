@@ -27,20 +27,16 @@
         font-weight: normal;  
     }
 
-
-    // &__right {
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    // };
-
-
-
     &__tools {
         display: flex;
         flex-grow: 1;
         justify-content: space-between;
         align-items: center;
+        margin-top: 15px;
+
+        @include mixins.tablet {
+            margin-top: 0px;
+        }
     }
 
 
