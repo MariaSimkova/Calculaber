@@ -42,6 +42,7 @@
 
     &__menu {
         display: flex;
+        align-items: center;
     }
 
     &__logo {
@@ -67,45 +68,47 @@
         @include mixins.tablet {
             padding: 5px 20px;
         }
-    }
+    
 
-    &__link-box--border-left {
-        border-left: 1px solid variables.$color-objects;
-    }
+        &--border-left {
+            border-left: 1px solid variables.$color-objects;
+        }
 
-    &__link-box--border-right {
-        border-right: 1px solid variables.$color-objects;
-    }
+        &--border-right {
+            border-right: 1px solid variables.$color-objects;
+        }
 
-    &__link-box--hide {
-        @media screen and (max-width: 550px) {
+        &--hide {
+            @media screen and (max-width: 550px) {
+                display: none;
+            }
+        }
+
+        &--text {
+
+            display: none;
+        
+            @include mixins.tablet {
+                display: block;
+            }
+        
+        }
+
+        &--icon {
+
+            padding: 0 15px 0 8px;
+            margin-right: 8px;
+        
+            @include mixins.tablet {
+                display: none;
+            }
+        
+        }
+
+        &--admin {
             display: none;
         }
-    }
 
-    &__link-box--text {
-
-        display: none;
-    
-        @include mixins.tablet {
-            display: block;
-        }
-    
-    }
-
-    &__link-box--icon {
-
-        padding: 9px 15px 0 8px;
-        margin-right: 8px;
-    
-        @include mixins.tablet {
-            display: none;
-        }
-    
-    }
-
-    &__link-box--admin {
-        display: none;
     }
 
 
