@@ -385,6 +385,7 @@ main {
 .gallery__info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .gallery__title--center {
   color: #A2A6AA;
