@@ -67,21 +67,11 @@
     }
 
     &__tags {
-        // width: 100%;
         display: flex;
         padding: 0 10px 5px 10px;
         font-size: 12px;
-
-        // display: flex;
-        // align-items: flex-start;
     }
 
-    .tag {
-        margin: 0 3px;
-        padding: 1px 3px;
-        border-radius: 5px;
-        background-color: variables.$color-primary--highlight;
-    }
 
 
 }
