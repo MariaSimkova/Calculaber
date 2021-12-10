@@ -11,7 +11,7 @@
 
     &__card {
         width: 100%;
-        height: 225px;
+        height: 228px;
         border: 1px solid variables.$color-objects;
         border-radius: 5px;
         box-shadow: 0.5px 0.5px 4px variables.$color-objects--shade;
@@ -51,7 +51,7 @@
     &__title {
         border-top: 1px solid variables.$color-objects;
         height: 30px;
-        padding: 15px 10px 10px 10px;
+        padding: 15px 10px 18px 10px;
 
         &--flex {
             display: flex;
@@ -69,15 +69,18 @@
     &__tags {
         // width: 100%;
         display: flex;
-        padding: 10px;
+        padding: 0 10px 5px 10px;
         font-size: 12px;
 
         // display: flex;
         // align-items: flex-start;
     }
 
-    .tags-box {
-        margin: 2px;
+    .tag {
+        margin: 0 3px;
+        padding: 1px 3px;
+        border-radius: 5px;
+        background-color: variables.$color-primary--highlight;
     }
 
 
