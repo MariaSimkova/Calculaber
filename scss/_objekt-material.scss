@@ -5,23 +5,26 @@
     display: flex;
 }
 
+.align-left {
+    text-align: left;
+}
+
 
 table {
     width: 100%;
     padding-bottom: 50px;
+    border-collapse:collapse;
 }
 
 th {
     text-align: left;
-}
-
-th {
     border-bottom: 1px solid variables.$color-objects;
 }
 
 th,
 td {
-    padding: 20px;
+    padding: 12px;
+    text-align: center;
 }
 
 .table {
@@ -60,8 +63,13 @@ td {
 
         padding-bottom: 20px;
 
+        &__data:hover {
+            background-color: variables.$color-objects--hover;
+        }
+
         &__item {
             font-weight: bold;
+            text-align: left;
         }
     }
 

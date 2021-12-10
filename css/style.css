@@ -40,16 +40,13 @@ ul, li {
   background-position: 0 100%;
 }
 
-button {
-  border: 0;
-}
-
 main {
   padding: 0 50px;
 }
 
 button {
-  background-color: white;
+  border: 0;
+  background-color: transparent;
   padding: 0;
   margin: 0;
 }
@@ -162,7 +159,7 @@ button:hover {
 }
 
 .table__new {
-  margin-top: 0;
+  margin-top: 15px;
   padding-left: 0;
 }
 .table__new--text {
@@ -291,10 +288,11 @@ button:hover {
 }
 .path__link:hover {
   text-decoration: underline;
+  color: #A2A6AA;
 }
 
 .header {
-  padding: 20px 0 50px 0;
+  padding: 25px 0 40px 0;
   text-align: left;
 }
 .header--flex {
@@ -400,6 +398,8 @@ button:hover {
   padding: 5px;
   width: 200px;
   height: 50px;
+  display: grid;
+  place-content: center;
 }
 .welcome__number {
   font-size: 24px;
@@ -486,22 +486,25 @@ button:hover {
   display: flex;
 }
 
+.align-left {
+  text-align: left;
+}
+
 table {
   width: 100%;
   padding-bottom: 50px;
+  border-collapse: collapse;
 }
 
 th {
   text-align: left;
-}
-
-th {
   border-bottom: 1px solid #CED6DF;
 }
 
 th,
 td {
-  padding: 20px;
+  padding: 12px;
+  text-align: center;
 }
 
 .table__icons {
@@ -530,8 +533,12 @@ td {
 .table-object, .table-material {
   padding-bottom: 20px;
 }
+.table-object__data:hover, .table-material__data:hover {
+  background-color: #f8f9fae1;
+}
 .table-object__item, .table-material__item {
   font-weight: bold;
+  text-align: left;
 }
 .table__new {
   color: #A2A6AA;
