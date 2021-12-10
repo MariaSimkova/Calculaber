@@ -178,9 +178,42 @@ button:hover {
 
 .tag {
   margin: 0 3px;
-  padding: 2px 5px;
+  padding: 2px 6px;
   border-radius: 10px;
   background-color: #FAC835;
+}
+.tag__popup-container {
+  display: flex;
+  padding: 5px 10px 5px 0;
+  font-size: 12px;
+}
+.tag__gallery {
+  display: flex;
+  padding: 0 10px 5px 7px;
+  font-size: 12px;
+}
+.tag__header {
+  display: flex;
+  padding-top: 10px;
+  font-size: 12px;
+}
+.tag__table {
+  display: flex;
+  padding-top: 10px;
+  font-size: 12px;
+}
+.tag--flex {
+  display: flex;
+  justify-content: center;
+}
+.tag__button-close {
+  display: grid;
+  place-content: center;
+  margin-left: 1px;
+  border-radius: 50%;
+}
+.tag__button-close:hover {
+  color: white;
 }
 
 .navbar--light {
@@ -361,11 +394,6 @@ button:hover {
   border-radius: 10px;
   color: white;
 }
-.header__tags {
-  display: flex;
-  padding-top: 10px;
-  font-size: 12px;
-}
 
 .hero {
   width: 100%;
@@ -488,11 +516,6 @@ button:hover {
 }
 .gallery__title--price {
   padding: 3px;
-}
-.gallery__tags {
-  display: flex;
-  padding: 0 10px 5px 7px;
-  font-size: 12px;
 }
 
 .toolbar {
