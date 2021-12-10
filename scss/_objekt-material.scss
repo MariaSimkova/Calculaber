@@ -25,6 +25,7 @@ td {
 }
 
 .table {
+
     &__icons {
         display: flex;
         align-items: center;
@@ -56,6 +57,8 @@ td {
 
     &-object,
     &-material {
+
+        padding-bottom: 20px;
 
         &__item {
             font-weight: bold;

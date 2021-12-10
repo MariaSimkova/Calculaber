@@ -6,29 +6,66 @@
 .button {
     @include mixins.center;
     border-radius: 10px;
+    width: 85px;
+    padding: 6px 15px 9px 15px;
+    font-weight: semi-bold;
+    font-size: 18px;
+    transition: background-color 0.2s, transform 0.2s;
+
+    &:active {
+        transform: translate(1px, 1px);
+    }
 
     &--primary {
         background-color: variables.$color-primary;
-        transition: 
-            background-color 0.2s, 
-            box-shadow 0.2s, 
-		    transform 0.2s;
+            
+        &:hover {
+            background-color: variables.$color-primary--hover;
+        }
+    }
+
+    &--secondary {
+        background-color: variables.$color-button--dark;
+        color: white;
+            
+        &:hover {
+            background-color: variables.$color-navbar--dark;
+        }
+    }
+
+    &--danger {
+        background-color: variables.$color-button--danger;
+        color: white;
+            
+        &:hover {
+            background-color: variables.$color-button--danger-hover;
+        }
     }
 
     &--shadow {
         box-shadow: 5px 5px 15px variables.$color-objects;
+
+        &:hover {
+            box-shadow: 5px 5px 8px variables.$color-objects;
+        }
+    
+        &:active {
+            box-shadow: 3px 3px 5px variables.$color-objects;
+            transition: box-shadow 0.2s;
+        } 
     }
 
-
-    &:hover {
-        box-shadow: 5px 5px 8px variables.$color-objects;
-        background-color: variables.$color-primary--hover;
+    &--margin {
+        margin: 7px;
     }
 
-    &:active {
-        box-shadow: 3px 3px 5px variables.$color-objects;
-        transform: translate(1px, 1px);
-    } 
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+
 }
 
 .icon {
@@ -83,15 +120,19 @@
 
 }
 
+.table__new {
+    margin-top: 0;
+    padding-left: 0;
 
-// .tag {
-//     background-color: variables.$color-primary;
-//     border-radius: 10%;
-//     padding: 1px;
-//     margin-right: 6px;
+    &--text {
+        display: inline;
+        padding: 5px 10px 5px 10px;
 
-//     &--grey {
-//         background-color: variables.$color-icon--neutral;
-//     }
-// }
+        &:hover {
+            cursor: pointer;
+            background-color: variables.$color-icon--neutral;
+            border-radius: 10px;
+        }
+    }
+}
 

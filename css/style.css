@@ -10,6 +10,10 @@ html {
   margin: 0;
 }
 
+body {
+  padding-bottom: 50px;
+}
+
 body,
 button,
 a {
@@ -44,25 +48,76 @@ main {
   padding: 0 50px;
 }
 
+button {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .button {
   display: grid;
   place-content: center;
   border-radius: 10px;
+  width: 85px;
+  padding: 6px 15px 9px 15px;
+  font-weight: semi-bold;
+  font-size: 18px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+.button:active {
+  transform: translate(1px, 1px);
 }
 .button--primary {
   background-color: #FEBE0C;
-  transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.button--primary:hover {
+  background-color: #f8b600;
+}
+.button--secondary {
+  background-color: #514f5a;
+  color: white;
+}
+.button--secondary:hover {
+  background-color: #2E2A3D;
+}
+.button--danger {
+  background-color: #f87676;
+  color: white;
+}
+.button--danger:hover {
+  background-color: #f65151;
 }
 .button--shadow {
   box-shadow: 5px 5px 15px #CED6DF;
 }
-.button:hover {
+.button--shadow:hover {
   box-shadow: 5px 5px 8px #CED6DF;
-  background-color: #f8b600;
 }
-.button:active {
+.button--shadow:active {
   box-shadow: 3px 3px 5px #CED6DF;
-  transform: translate(1px, 1px);
+  transition: box-shadow 0.2s;
+}
+.button--margin {
+  margin: 7px;
+}
+.button__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
 }
 
 .icon {
@@ -104,6 +159,20 @@ main {
 }
 .icon-duplicate:hover, .icon-duplicate:active {
   background-color: #FEBE0C;
+}
+
+.table__new {
+  margin-top: 0;
+  padding-left: 0;
+}
+.table__new--text {
+  display: inline;
+  padding: 5px 10px 5px 10px;
+}
+.table__new--text:hover {
+  cursor: pointer;
+  background-color: #EFF1F3;
+  border-radius: 10px;
 }
 
 .navbar--light {
@@ -458,9 +527,29 @@ td {
   background-color: #FFD8D8;
   border-radius: 50%;
 }
+.table-object, .table-material {
+  padding-bottom: 20px;
+}
 .table-object__item, .table-material__item {
   font-weight: bold;
 }
 .table__new {
   color: #A2A6AA;
+}
+
+.danger__container {
+  max-width: 500px;
+  margin-top: 60px;
+  padding: 50px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .danger__container {
+    padding-top: 80px;
+  }
+}
+.danger__message {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
