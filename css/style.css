@@ -343,6 +343,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 23px;
 }
 .header__top {
   margin: 0;
@@ -361,7 +362,8 @@ button:hover {
   flex-grow: 1;
   justify-content: space-between;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 18px;
+  padding-right: 23px;
 }
 @media screen and (min-width: 768px) {
   .header__tools {
