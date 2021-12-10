@@ -71,9 +71,16 @@ td {
             font-weight: bold;
             text-align: left;
         }
+
     }
 
     &__new {
         color: variables.$color-text-secondary;
     }
-}
+
+    &__tags {
+        display: flex;
+        padding-top: 10px;
+        font-size: 12px;
+    }
+}   

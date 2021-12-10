@@ -64,6 +64,10 @@ button:hover {
   font-weight: bold;
 }
 
+.hidden {
+  display: none;
+}
+
 .button {
   display: grid;
   place-content: center;
@@ -174,8 +178,8 @@ button:hover {
 
 .tag {
   margin: 0 3px;
-  padding: 1px 3px;
-  border-radius: 5px;
+  padding: 2px 5px;
+  border-radius: 10px;
   background-color: #FAC835;
 }
 
@@ -487,7 +491,7 @@ button:hover {
 }
 .gallery__tags {
   display: flex;
-  padding: 0 10px 5px 10px;
+  padding: 0 10px 5px 7px;
   font-size: 12px;
 }
 
@@ -551,6 +555,11 @@ td {
 }
 .table__new {
   color: #A2A6AA;
+}
+.table__tags {
+  display: flex;
+  padding-top: 10px;
+  font-size: 12px;
 }
 
 .danger__container {
