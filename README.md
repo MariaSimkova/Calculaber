@@ -5,3 +5,5 @@ Ta závěrečná práce je projekt, který jsem udělala s backend developerem. 
 
 Zde je link na současnou verzi stránky: https://lockearkady.pythonanywhere.com/
 Můžete se přihlásit za pomoci tohoto uživatelského čísla: 676284012
+
+Dále jsem připravila statickou stránku v Eleventy, abych mohla ukázat vlastní kód pro snazší náhled na mnou vytvořené html a css.
