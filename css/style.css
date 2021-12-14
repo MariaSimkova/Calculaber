@@ -918,6 +918,7 @@ button:hover {
 }
 
 .welcome {
+  margin: 0 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
