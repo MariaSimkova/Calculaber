@@ -5,10 +5,15 @@
 
 .hero {
 
+    @include mixins.tablet {
+        margin-top: 60px;
+    }
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "icons--left content icons--right";
+
 
     &__icons--left,
     &__icons--right {
@@ -254,21 +259,37 @@
         align-items: center;
         text-align: center;
 
+
         &-logo {
             padding-top: 40px;
             padding-bottom: 30px;
             width: 80px;
             height: auto;
+
+            @include mixins.large-desktop {
+                width: 130px;
+                padding-bottom: 50px;
+            }
         }
 
 
         &-title {
             font-size: 60px;
             padding-bottom: 25px;
+
+            @include mixins.large-desktop {
+                font-size: 90px;
+                padding-bottom: 40px;
+            }
         }
 
         &-subtitle {
             padding-bottom: 70px;
+
+            @include mixins.large-desktop {
+                font-size: 36px;
+                padding-bottom: 100px;
+            }
         }
 
         &-button {
@@ -276,6 +297,12 @@
             height: 50px;
             font-weight: semi-bold;
             font-size: 24px;
+
+            @include mixins.large-desktop {
+                width: 150px;
+                height: 70px;
+                font-size: 36px;
+            }
         }
     }
 }
