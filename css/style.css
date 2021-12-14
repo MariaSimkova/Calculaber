@@ -917,16 +917,6 @@ button:hover {
   }
 }
 
-.value-prop {
-  padding: 70px 40px;
-}
-.value-prop__container {
-  padding-bottom: 40px;
-}
-.value-prop__title, .value-prop__text--padding {
-  padding-bottom: 20px;
-}
-
 .welcome {
   display: flex;
   flex-direction: column;
