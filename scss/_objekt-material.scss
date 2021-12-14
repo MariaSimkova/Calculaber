@@ -17,7 +17,6 @@ table {
 }
 
 th {
-    text-align: left;
     border-bottom: 1px solid variables.$color-objects;
 }
 
@@ -26,6 +25,14 @@ td {
     padding: 12px;
     text-align: center;
 }
+
+th {
+    .table-object__item {
+        text-align: left;
+        border-bottom: 1px solid variables.$color-objects;
+    }
+}
+
 
 .table {
 
